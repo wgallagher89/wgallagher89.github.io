@@ -12,6 +12,12 @@
   font-style: normal;
 }
 
+/* Reset Default Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Header Section */
 header {
     position: fixed;
@@ -26,6 +32,7 @@ header {
 }
 header h1 {
     margin-left: 25%;
+    color: black;
 }
 .navbar {
     margin-right: 25%;
@@ -64,12 +71,40 @@ section {
 }
 
 .about-me-container img {
-    width: 20%;
+    width: 16rem;
     height: auto;
 }
 
 .about-me-description {
     width: 100%;
+    min-width: 28rem;
+    padding-right: 1rem;
+}
+
+#light-dark {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#light-dark p:hover{
+    color: dodgerblue;
+}
+
+.project h3 {
+    display: inline;
+}
+
+.project img {
+    width: 31.25rem;
+    height: auto;
+}
+
+#skills-box i {
+    margin: 0 0.5rem;
+}
+
+#certifications {
+    min-width: 22rem;
 }
 
 #certifications a {
@@ -99,3 +134,21 @@ footer {
     top: 5rem;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.50rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar li {
+        display: inline-block;
+        margin: 0 0.25rem;
+        font-size: 0.75rem;
+    }    
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
