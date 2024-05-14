@@ -7,6 +7,7 @@ function toggleLightDark() {
         const nodeList = document.querySelectorAll('a');
         for (let i = 0; i < nodeList.length; i++) {
             nodeList[i].style.color = 'white';
+            nodeList[i].style.setProperty('--a-color','dodgerblue');
         }
         document.querySelector('li').style.color = 'white';
         document.getElementById('header').style.backgroundColor = 'darkgray';
@@ -18,6 +19,7 @@ function toggleLightDark() {
         const nodeList = document.querySelectorAll('a');
         for (let i = 0; i < nodeList.length; i++) {
             nodeList[i].style.color = 'black';
+            nodeList[i].style.setProperty('--a-color','dodgerblue');
         }
         document.querySelector('li').style.color = 'black';
         document.getElementById('header').style.backgroundColor = 'white';
