@@ -1,0 +1,156 @@
+/* Font Classes */
+.reddit-sans-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.reddit-sans-bold {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Reset Default Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid black;
+    z-index: 1;
+    background-color: white;
+}
+header h1 {
+    margin-left: 20%;
+    color: black;
+}
+.navbar {
+    margin-right: 20%;
+}
+.navbar li {
+    display: inline-block;
+    margin: 0.50rem;
+    font-size: 1.25rem;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+    color: dodgerblue;
+    background: var(--a-color);
+}
+
+/* Main Section */
+main {
+    position: relative;
+    top: 5rem;
+    margin: 0 20%;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+#about-me {
+    padding-top: 1.5rem;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-container img {
+    width: 16rem;
+    height: auto;
+}
+
+.about-me-description {
+    width: 75%;
+    min-width: 28rem;
+    padding-right: 1rem;
+}
+
+#light-dark {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#light-dark p:hover{
+    color: dodgerblue;
+}
+
+.project h3 {
+    display: inline;
+}
+
+.project img {
+    width: 31.25rem;
+    height: auto;
+}
+
+#skills-box i {
+    margin: 0 0.5rem;
+}
+
+#certifications {
+    min-width: 22rem;
+}
+
+#certifications a {
+    text-decoration: none;
+    color: black;
+}
+
+#certifications a:hover {
+    color: dodgerblue;
+    background: var(--a-color);
+}
+
+#contact a {
+    margin: 0 0.25rem;
+}
+
+#contact i {
+    color: black;
+}
+
+#contact i:hover {
+    color: dodgerblue;
+}
+
+/* Footer Section */
+footer {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.50rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar li {
+        display: inline-block;
+        margin: 0 0.25rem;
+        font-size: 0.75rem;
+    }    
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
